@@ -1,0 +1,32 @@
+<!-- <div class="container">
+    <h2 style="text-align:center">Product Description</h2>
+    <div class="card">
+        <h2>{{product.name}}</h2>
+        <h6>{{product.category}}</h6>
+        <hr>
+        <h4>Description : {{product.description}}</h4>
+        <h4>Price : {{ product.price | currency : "USD" : "symbol" : "2.2-2" }}</h4>
+        <button class="btn btn-success btn-sm" (click)="addProductToCart(product)">
+            Add To Cart
+        </button>
+        <button class="back-button" (click)="goBack()">Back</button>
+    </div>
+</div> -->
+
+<div class="container">
+    <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 100vh;">
+        <h2 style="text-align: center; margin-bottom: 20px;">Product Description</h2> <!-- Added margin-bottom -->
+        <div class="card" style="padding: 20px;"> 
+            <h3>{{product.name}}</h3>
+            <h6>{{product.category}}</h6>
+            <hr>
+            <p>Description: {{product.description}}</p>
+            <h4>Price: {{product.price | currency : 'USD' : 'symbol' : '2.2-2'}}</h4>
+            <button class="btn btn-success btn-sm" (click)="addProductToCart(product)">Add To Cart</button>
+            <button class="back-button" (click)="goBack()">Back</button>
+        </div>
+    </div>
+</div>
+
+
+

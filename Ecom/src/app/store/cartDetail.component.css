@@ -1,0 +1,9 @@
+.apply-button {
+    background-color: rgb(252, 252, 252); 
+    color: rgb(0, 0, 0);
+}
+
+.remove-button {
+  background-color: #797979; 
+  color: #fff; 
+}

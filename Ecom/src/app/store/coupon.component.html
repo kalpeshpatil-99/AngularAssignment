@@ -1,0 +1,14 @@
+<div class="d-flex align-items-center justify-content-center"
+    style="font-family: Arial, sans-serif; background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%); height: 100vh;">
+    <div class="container text-center p-4"
+        style="background-image: linear-gradient(-225deg, #e0faf2 0%, #f8d6f1 100%); border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); position: relative;">
+        <button class="close-button"
+            style="position: absolute; top: 10px; right: 10px; background: none; border: none; font-size: 20px; cursor: pointer;"
+            (click)="closeCard()">✕</button>
+        <h2><strong>Coupon Code:</strong></h2>
+        <button class="btn"
+            style="margin-right: 10px; background-color: #d62598; color: rgb(255, 255, 255); font-weight: 800;"
+            [disabled]="count" (click)="applyCoupon()">SUMMERSALE10</button>
+        <p><strong>Use this coupon Code for getting 10% Discount in your Purchase.</strong></p>
+    </div>
+</div>
